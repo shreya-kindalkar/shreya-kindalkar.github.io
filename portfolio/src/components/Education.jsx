@@ -11,15 +11,15 @@ const EDUCATION = [
     current: true,
   },
   {
-    degree: 'Class 12 – Science (PCMB)',
+    degree: 'Class 12 – Science (PCMC)',
     institution: 'Jain PU College, Jayanagar, Bangalore',
-    period: '2024',
+    period: '2025',
     detail: '82%',
   },
   {
     degree: 'Class 10',
-    institution: 'Atomic Energy Central School',
-    period: '2022',
+    institution: 'Atomic Energy Central School, Kaiga, Karnataka',
+    period: '2023',
     detail: '84%',
   },
 ]
