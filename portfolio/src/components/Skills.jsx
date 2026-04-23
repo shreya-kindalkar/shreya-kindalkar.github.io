@@ -21,7 +21,7 @@ const SKILL_GROUPS = [
     category: 'Languages',
     icon: FiCpu,
     color: 'emerald',
-    skills: ['Python', 'C++', 'SQL'],
+    skills: ['Python', 'SQL'],
   },
   {
     category: 'Databases',
@@ -33,7 +33,7 @@ const SKILL_GROUPS = [
     category: 'Tools',
     icon: FiTool,
     color: 'amber',
-    skills: ['Git', 'VS Code'],
+    skills: ['Git', 'VS Code', 'Figma', 'Canva'],
   },
 ]
 
