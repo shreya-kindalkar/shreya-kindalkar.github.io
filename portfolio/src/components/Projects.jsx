@@ -4,6 +4,17 @@ import { FiExternalLink, FiGithub, FiAlertCircle } from 'react-icons/fi'
 
 const PROJECTS = [
   {
+    title: 'VenturePilot',
+    description: 'Startup validation dashboard powered by a 5-agent AI pipeline. Paste your idea and get user personas, behavior simulations, problem detection, go-to-market strategies, and a scored summary.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Lyzr AI', 'MongoDB'],
+    color: 'pink',
+    links: [
+      { label: 'Live', url: 'https://venture-pilot-sharp-lens-gsjb.architect.space/', icon: FiExternalLink },
+      { label: 'GitHub', url: 'https://github.com/shreya-kindalkar/venture-pilot-sharp-lens-gsjb', icon: FiGithub },
+    ],
+    badge: 'AI',
+  },
+  {
     title: 'Voyageur',
     description: 'Travel platform focused on frontend performance and usability. Responsive UI with API integration, scalable component structure, and smooth data flow.',
     tech: ['React', 'FastAPI', 'PostgreSQL'],
@@ -38,6 +49,7 @@ const PROJECTS = [
 ]
 
 const colorMap = {
+  pink: { accent: 'text-pink-400', border: 'hover:border-pink-500/40', tag: 'bg-pink-600/15 text-pink-300', glow: 'hover:shadow-pink-500/10', titleHover: 'group-hover:text-pink-400' },
   violet: { accent: 'text-violet-400', border: 'hover:border-violet-500/40', tag: 'bg-violet-600/15 text-violet-300', glow: 'hover:shadow-violet-500/10', titleHover: 'group-hover:text-violet-400' },
   emerald: { accent: 'text-emerald-400', border: 'hover:border-emerald-500/40', tag: 'bg-emerald-600/15 text-emerald-300', glow: 'hover:shadow-emerald-500/10', titleHover: 'group-hover:text-emerald-400' },
   blue: { accent: 'text-blue-400', border: 'hover:border-blue-500/40', tag: 'bg-blue-600/15 text-blue-300', glow: 'hover:shadow-blue-500/10', titleHover: 'group-hover:text-blue-400' },
@@ -60,7 +72,7 @@ export default function Projects() {
           <h2 className="text-3xl md:text-4xl font-bold text-white">Projects</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {PROJECTS.map(({ title, description, tech, color, links, note, badge }, i) => {
             const c = colorMap[color]
             return (
