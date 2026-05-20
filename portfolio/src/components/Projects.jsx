@@ -4,6 +4,17 @@ import { FiExternalLink, FiGithub, FiAlertCircle } from 'react-icons/fi'
 
 const PROJECTS = [
   {
+    title: 'BTC/USDT Price Range Forecaster',
+    description: 'Probabilistic forecasting dashboard predicting Bitcoin\'s next 1-hour price range as a 95% confidence interval. Uses volatility-based modeling with HAR-RV blending and walk-forward backtesting.',
+    tech: ['Python', 'Streamlit', 'FIGARCH', 'HAR-RV', 'Binance API'],
+    color: 'amber',
+    links: [
+      { label: 'Live', url: 'https://btc-forecaster-dashboard-irdkbrun27bqutzryufcmv.streamlit.app/', icon: FiExternalLink },
+      { label: 'GitHub', url: 'https://github.com/shreya-kindalkar/btc-forecaster-dashboard', icon: FiGithub },
+    ],
+    badge: 'ML',
+  },
+  {
     title: 'VenturePilot',
     description: 'Startup validation dashboard powered by a 5-agent AI pipeline. Paste your idea and get user personas, behavior simulations, problem detection, go-to-market strategies, and a scored summary.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Lyzr AI', 'MongoDB'],
@@ -49,6 +60,7 @@ const PROJECTS = [
 ]
 
 const colorMap = {
+  amber: { accent: 'text-amber-400', border: 'hover:border-amber-500/40', tag: 'bg-amber-600/15 text-amber-300', glow: 'hover:shadow-amber-500/10', titleHover: 'group-hover:text-amber-400' },
   pink: { accent: 'text-pink-400', border: 'hover:border-pink-500/40', tag: 'bg-pink-600/15 text-pink-300', glow: 'hover:shadow-pink-500/10', titleHover: 'group-hover:text-pink-400' },
   violet: { accent: 'text-violet-400', border: 'hover:border-violet-500/40', tag: 'bg-violet-600/15 text-violet-300', glow: 'hover:shadow-violet-500/10', titleHover: 'group-hover:text-violet-400' },
   emerald: { accent: 'text-emerald-400', border: 'hover:border-emerald-500/40', tag: 'bg-emerald-600/15 text-emerald-300', glow: 'hover:shadow-emerald-500/10', titleHover: 'group-hover:text-emerald-400' },
